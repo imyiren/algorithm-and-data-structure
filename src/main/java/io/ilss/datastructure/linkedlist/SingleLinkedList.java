@@ -1,5 +1,9 @@
 package io.ilss.datastructure.linkedlist;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
+
 /**
  * @author feng
  */
@@ -143,6 +147,22 @@ public class SingleLinkedList {
         } while (null != (temp = temp.getNext()));
     }
 
+    public void reversePrint(HeroNode head) {
+        if (null == head.getNext()) {
+            System.out.println("链表为空");
+        }
+        Stack<HeroNode> nodes = new Stack<>();
+        HeroNode temp = head.getNext();
+        while (null != temp) {
+            nodes.push(temp);
+            temp = temp.getNext();
+        }
+        while (!nodes.empty()) {
+            System.out.println(nodes.pop());
+        }
+    }
+
+
     public static void main(String[] args) {
         SingleLinkedList linkedList = new SingleLinkedList();
         HeroNode songHero = new HeroNode(1, "松江", "及时雨");
@@ -154,11 +174,15 @@ public class SingleLinkedList {
         // linkedList.add(wuHero);
         // linkedList.add(linHero);
 
+
         linkedList.addByOrder(luHero);
         linkedList.addByOrder(songHero);
         linkedList.addByOrder(linHero);
         linkedList.addByOrder(wuHero);
         linkedList.addByOrder(linHero);
+
+        System.out.println("逆序打印");
+        linkedList.reversePrint(linkedList.head);
 
         System.out.println("寻找倒数的节点： "+linkedList.findLastIndexNode(linkedList.head, 2));
 
