@@ -81,7 +81,6 @@ public class SingleLinkedList {
             }
             temp = temp.getNext();
         }
-
     }
 
     public int getLength(HeroNode head) {
