@@ -10,8 +10,6 @@ public class PolandNotation {
         // 数和符号用空格隔开
         String suffixExpress = "30 4 + 5 * 6 - ";
         Stack stack = new LinkedStack();
-        // 数字正则
-
 
         String[] strArr = suffixExpress.split(" ");
         for (String item : strArr) {
