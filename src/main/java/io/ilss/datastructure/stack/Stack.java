@@ -3,6 +3,15 @@ package io.ilss.datastructure.stack;
 /**
  * @author feng
  */
-public class Stack {
+public interface Stack {
+    int pop();
+
+    void push(int value);
+
+    void list();
+
+    boolean isEmpty();
+
+    int peek();
 
 }
