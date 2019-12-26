@@ -25,10 +25,10 @@ public class JosephuQuestion {
     }
 
     public static void show(SingleNode first) {
-        SingleNode temp = first;
         if (null == first) {
             return;
         }
+        SingleNode temp = first;
         do {
             System.out.println("节点" + temp.value);
         } while (first != (temp = temp.next));
@@ -54,7 +54,7 @@ public class JosephuQuestion {
             temp = temp.next;
         }
         while (true) {
-            if (resultNodes.size() == n - 1) {
+            if (resultNodes.size() == n) {
                 break;
             }
             // 指正移动
@@ -77,10 +77,18 @@ public class JosephuQuestion {
     public static void main(String[] args) {
         SingleNode firstNode = initCircleLinkedList(5);
         show(firstNode);
-        List<SingleNode> josephuResult = josephu(firstNode, 1, 3, 5);
-        for (SingleNode node :
-                josephuResult) {
-            System.out.println(node.value);
+        List<SingleNode> josephuResult = josephu(firstNode, 1, 2, 5);
+
+        for (SingleNode node : josephuResult) {
+            if (node == josephuResult.get(josephuResult.size() - 1)) {
+                break;
+            }
+            System.out.print(node.value + " ");
         }
+        System.out.println();
+        System.out.print("=====> 最后剩下：");
+        // 不能用show first已经被移除了，所以只能
+        // show(firstNode);
+        System.out.println(josephuResult.get(josephuResult.size() - 1).value);
     }
 }
