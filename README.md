@@ -1,6 +1,10 @@
 # data-structure
 重学数据结构-java版
 
+# 0. 目录
+
+
+
 # 1. LinkedList 链表
 > 代码路径：[io.ilss.datastructure.linkedlist (点击跳转)](https://github.com/ilssio/data-structure/tree/master/src/main/java/io/ilss/datastructure/linkedlist "linkedlist")
 
@@ -27,3 +31,12 @@
     > 包括: 利用栈解决中缀表达式计算。
 - 中缀转后缀计算器问题：io.ilss.datastructure.stack.SuffixCalculator
     > 包括: 表达式转转中缀，中缀转后缀（逆波兰），后缀表达式计算问题。
+                                                            >
+# 4. Queue 队列
+> 代码路径：[io.ilss.datastructure.queue (点击跳转)](https://github.com/ilssio/data-structure/tree/master/src/main/java/io/ilss/datastructure/queue "queue")
+
+- 数组简单队列：io.ilss.datastructure.queue.ArrayQueue
+    > 包括: 出队、入队等操作
+- 循环队列：io.ilss.datastructure.queue.CircleArrayQueue
+    > 包括: 出队、入队等操作
+- leetcode循环队列实现题：io.ilss.datastructure.queue.MyCircularDeque
