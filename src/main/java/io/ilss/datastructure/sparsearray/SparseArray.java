@@ -9,6 +9,13 @@ import java.util.Arrays;
  */
 public class SparseArray {
 
+    /**
+     * 稀疏数组：使用n行3列数组保存稀疏矩阵的值
+     * arr[x][0]第几行
+     * arr[x][1]第几列
+     * arr[x][2]值
+     * @param args
+     */
     public static void main(String[] args) {
         int[][] chessArray1 = new int[11][11];
         chessArray1[1][2] = 1;

@@ -7,7 +7,7 @@ import static io.ilss.datastructure.stack.CalculatorUtils.*;
 /**
  * @author feng
  */
-public class Compute {
+public class InfixCalculator {
     public static void main(String[] args) {
         Stack numStack = new LinkedStack();
         Stack operatorStack = new LinkedStack();
@@ -74,7 +74,7 @@ public class Compute {
             }
         }
 
-        // 考虑小括号的情况。
+        // TODO: 2019/12/27  考虑小括号的情况。
     }
 
 }

@@ -1,7 +1,6 @@
 package io.ilss.datastructure.stack;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import static io.ilss.datastructure.stack.CalculatorUtils.*;
@@ -9,32 +8,11 @@ import static io.ilss.datastructure.stack.CalculatorUtils.*;
 /**
  * @author feng
  */
-public class PolandNotation {
+public class SuffixCalculator {
     public static void main(String[] args) {
-        // 数和符号用空格隔开
-        // String suffixExpress = "30 4 + 5 * 6 - ";
-        // Stack stack = new LinkedStack();
-        //
-        // String[] strArr = suffixExpress.split(" ");
-        // for (String item : strArr) {
-        //     // 处理数字
-        //     if (item.matches("\\d+")) {
-        //         stack.push(Integer.parseInt(item));
-        //         continue;
-        //     }
-        //     // 符号 就计算
-        //     int num2 = stack.pop();
-        //     int num1 = stack.pop();
-        //     int result = calculator(num1, num2, item.charAt(0));
-        //     stack.push(result);
-        // }
-        // // 164
-        // System.out.println("expr: " + suffixExpress + ", result: " + stack.pop());
-
-
         String[] infixExprArr = transferToInfixExpr("1+20+3+(3+3)*4");
         String[] suffixExprArr = transferToSuffixExpr(infixExprArr);
-        System.out.println(Arrays.toString(suffixExprArr));
+        suffixCalculator(suffixExprArr);
 
     }
 
@@ -80,7 +58,7 @@ public class PolandNotation {
                 operatorStack.push(item.charAt(0));
                 continue;
             }
-            // 右括号
+            // 右括号 （先算括号里的，所以前面放进去的数字需要计算，此时就需要把符号栈里面的运算符放到数字后面）
             if (")".equals(item)) {
                 // 如果是右括号需要pop出符号，放入result 直到遇到左括号
                 while (operatorStack.peek() != '(') {
@@ -102,6 +80,26 @@ public class PolandNotation {
         }
 
         return result.toArray(new String[0]);
+    }
+
+    public static void suffixCalculator(String[] strArr ) {
+        Stack stack = new LinkedStack();
+
+        for (String item : strArr) {
+            // 处理数字
+            if (item.matches("\\d+")) {
+                stack.push(Integer.parseInt(item));
+                continue;
+            }
+            // 符号 就计算
+            int num2 = stack.pop();
+            int num1 = stack.pop();
+            int result = calculator(num1, num2, item.charAt(0));
+            stack.push(result);
+        }
+        // 164
+        System.out.println("result: " + stack.pop());
+
     }
 
 }

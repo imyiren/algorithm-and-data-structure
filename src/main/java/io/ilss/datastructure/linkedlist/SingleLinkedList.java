@@ -1,7 +1,5 @@
 package io.ilss.datastructure.linkedlist;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Stack;
 
 /**
@@ -9,117 +7,116 @@ import java.util.Stack;
  */
 public class SingleLinkedList {
     // 头结点不动 不存放具体数据
-    HeroNode head = new HeroNode(0, "", "");
+    SingleNode head = new SingleNode(0);
 
     // 当不考虑编号顺序时，找到当前链表最后节点，next 指向最新节点
-    public void add(HeroNode node) {
+    public void add(SingleNode node) {
         // head 节点不能动，我们使用temp来辅助遍历链表节点
-        HeroNode temp = this.head;
+        SingleNode temp = this.head;
         // 遍历找到最后节点
-        while (null != temp.getNext()) {
-            temp = temp.getNext();
+        while (null != temp.next) {
+            temp = temp.next;
         }
-        temp.setNext(node);
+        temp.next = node;
     }
 
-    public void addByOrder(HeroNode node) {
-        HeroNode temp = this.head;
+    public void addByOrder(SingleNode node) {
+        SingleNode temp = this.head;
         // 遍历找到最后节点
         while (true) {
-            if (temp.getNo() == node.getNo()) {
-                System.out.println("编号 " + node.getNo() + "已存在！");
+            if (temp.value == node.value) {
+                System.out.println("编号 " + node.value + "已存在！");
                 break;
             }
-            if (null == temp.getNext() || temp.getNext().getNo() > node.getNo()) {
-                node.setNext(temp.getNext());
-                temp.setNext(node);
+            if (null == temp.next || temp.next.value > node.value) {
+                node.next = temp.next;
+                temp.next = node;
                 break;
             }
-            temp = temp.getNext();
+            temp = temp.next;
         }
     }
 
     /**
      * 根据编号修改
      */
-    public void update(HeroNode newNode) {
-        if (null == this.head.getNext()) {
+    public void update(SingleNode newNode) {
+        if (null == this.head.next) {
             System.out.println("链表为空");
             return;
         }
-        HeroNode temp = this.head.getNext();
+        SingleNode temp = this.head.next;
 
         // 遍历找到最后节点
         while (true) {
             if (null == temp) {
-                System.out.println("没有找到该节点！" + newNode.getNo());
+                System.out.println("没有找到该节点！" + newNode.value);
                 break;
             }
-            if (temp.getNo() == newNode.getNo()) {
-                temp.setName(newNode.getName());
-                temp.setNickname(newNode.getNickname());
+            if (temp.value == newNode.value) {
+                System.out.println("修改了某些值， 节点：" + temp.value);
                 break;
             }
-            temp = temp.getNext();
+            temp = temp.next;
         }
     }
 
     public void delete(int no) {
-        if (null == this.head.getNext()) {
+        if (null == this.head.next) {
             System.out.println("链表节点为空");
             return;
         }
-        HeroNode temp = this.head;
+        SingleNode temp = this.head;
         while (true) {
-            if (null == temp.getNext()) {
+            if (null == temp.next) {
                 System.out.println("没有找到链表节点");
                 break;
             }
-            if (temp.getNext().getNo() == no) {
-                temp.setNext(temp.getNext().getNext());
+            if (temp.next.value == no) {
+                temp.next  = temp.next.next;
                 break;
             }
-            temp = temp.getNext();
+            temp = temp.next;
         }
     }
 
-    public int getLength(HeroNode head) {
-        if (null == head.getNext()) {
+    public int getLength(SingleNode head) {
+        if (null == head.next) {
             return 0;
         }
         int length = 0;
-        HeroNode cur = head.getNext();
+        SingleNode cur = head.next;
 
         while (null != cur) {
             length++;
-            cur = cur.getNext();
+            cur = cur.next;
         }
         return length;
     }
 
-    public void reverseList(HeroNode head) {
-        if (null == head.getNext() || null == head.getNext().getNext()) {
+    public void reverseList(SingleNode head) {
+        if (null == head.next || null == head.next.next) {
             return;
         }
-        HeroNode reverseHead = new HeroNode(0, "", "");
+        SingleNode reverseHead = new SingleNode(0);
 
         // 临时变量记录head
         while (true) {
-            HeroNode cur = head.getNext();
+            SingleNode cur = head.next;
             if (null == cur) {
                 break;
             }
-            head.setNext(head.getNext().getNext());
+            head.next  = head.next.next;
             // 把当前节点挪到reverseHead上
-            cur.setNext(reverseHead.getNext());
-            reverseHead.setNext(cur);
+            cur.next  = reverseHead.next;
+            reverseHead.next = cur;
         }
-        head.setNext(reverseHead.getNext());
+        head.next  = reverseHead.next;
     }
 
-    public HeroNode findLastIndexNode(HeroNode head, int index) {
+    public SingleNode findLastIndexNode(SingleNode head, int index) {
         // 没有找到
-        if (null == head.getNext()) {
+        if (null == head.next) {
             return null;
         }
         // 第一个遍历得到链表的长度
@@ -129,32 +126,32 @@ public class SingleLinkedList {
             return null;
         }
         // 设定当前为第一个开始，然后循环size-index
-        HeroNode current = head.getNext();
+        SingleNode current = head.next;
         for (int i = 0; i < size - index; i++) {
-            current = current.getNext();
+            current = current.next;
         }
         return current;
     }
 
     public void list() {
-        if (null == head.getNext()) {
+        if (null == head.next) {
             return;
         }
-        HeroNode temp = this.head.getNext();
+        SingleNode temp = this.head.next;
         do {
             System.out.println(temp);
-        } while (null != (temp = temp.getNext()));
+        } while (null != (temp = temp.next));
     }
 
-    public void reversePrint(HeroNode head) {
-        if (null == head.getNext()) {
+    public void reversePrint(SingleNode head) {
+        if (null == head.next) {
             System.out.println("链表为空");
         }
-        Stack<HeroNode> nodes = new Stack<>();
-        HeroNode temp = head.getNext();
+        Stack<SingleNode> nodes = new Stack<>();
+        SingleNode temp = head.next;
         while (null != temp) {
             nodes.push(temp);
-            temp = temp.getNext();
+            temp = temp.next;
         }
         while (!nodes.empty()) {
             System.out.println(nodes.pop());
@@ -164,10 +161,10 @@ public class SingleLinkedList {
 
     public static void main(String[] args) {
         SingleLinkedList linkedList = new SingleLinkedList();
-        HeroNode songHero = new HeroNode(1, "松江", "及时雨");
-        HeroNode luHero = new HeroNode(2, "卢俊义", "玉麒麟");
-        HeroNode wuHero = new HeroNode(3, "吴用", "智多星");
-        HeroNode linHero = new HeroNode(4, "林冲", "豹子头");
+        SingleNode songHero = new SingleNode(1);
+        SingleNode luHero = new SingleNode(2);
+        SingleNode wuHero = new SingleNode(3);
+        SingleNode linHero = new SingleNode(4);
         // linkedList.add(songHero);
         // linkedList.add(luHero);
         // linkedList.add(wuHero);
@@ -187,7 +184,7 @@ public class SingleLinkedList {
 
         linkedList.list();
 
-        linkedList.update(new HeroNode(2, "马聪聪", "mc聪"));
+        linkedList.update(new SingleNode(2));
         System.out.println("=====》 修改后");
         linkedList.list();
         linkedList.delete(1);
