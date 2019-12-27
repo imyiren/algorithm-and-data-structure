@@ -33,7 +33,8 @@ public class PolandNotation {
 
 
         String[] infixExprArr = transferToInfixExpr("1+20+3+(3+3)*4");
-
+        String[] suffixExprArr = transferToSuffixExpr(infixExprArr);
+        System.out.println(Arrays.toString(suffixExprArr));
 
     }
 
@@ -69,10 +70,38 @@ public class PolandNotation {
         List<String> result = new ArrayList<>();
 
         for (String item : infixArr) {
-
+            // 数字
+            if (item.matches("\\d+")) {
+                result.add(item);
+                continue;
+            }
+            // 左括号
+            if ("(".equals(item)) {
+                operatorStack.push(item.charAt(0));
+                continue;
+            }
+            // 右括号
+            if (")".equals(item)) {
+                // 如果是右括号需要pop出符号，放入result 直到遇到左括号
+                while (operatorStack.peek() != '(') {
+                    result.add(String.valueOf((char) operatorStack.pop()));
+                }
+                // 然后把左括号 pop出来
+                operatorStack.pop();
+                continue;
+            }
+            // 其他符号
+            while (!operatorStack.isEmpty() && priority(operatorStack.peek()) >= priority(item.charAt(0))) {
+                result.add(String.valueOf((char) operatorStack.pop()));
+            }
+            operatorStack.push(item.charAt(0));
+        }
+        // 最后把所有符号栈的符号放入result
+        while (!operatorStack.isEmpty()) {
+            result.add(String.valueOf((char) operatorStack.pop()));
         }
 
-        return null;
+        return result.toArray(new String[0]);
     }
 
 }
