@@ -43,7 +43,6 @@ public class EightQueens {
             print();
             return;
         }
-
         // 依次放入 并判断是否冲突
         for (int i = 0; i < max; i++) {
             arr[n] = i;
