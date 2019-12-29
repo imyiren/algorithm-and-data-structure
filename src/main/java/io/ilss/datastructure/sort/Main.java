@@ -28,6 +28,7 @@ public class Main {
             int[] shellArr = Arrays.copyOf(bubbleArr, bubbleArr.length);
             int[] quickArr = Arrays.copyOf(bubbleArr, bubbleArr.length);
             int[] mergeArr = Arrays.copyOf(bubbleArr, bubbleArr.length);
+            int[] radixArr = Arrays.copyOf(bubbleArr, bubbleArr.length);
 
             System.out.println("===> 默认");
             if (len < 100000) {
@@ -62,6 +63,11 @@ public class Main {
             MergeSort.sort(mergeArr);
             end = System.currentTimeMillis();
             System.out.println("归并: " + (end - start) / 1000.0);
+
+            start = System.currentTimeMillis();
+            RadixSort.sort(radixArr);
+            end = System.currentTimeMillis();
+            System.out.println("基数: " + (end - start) / 1000.0);
 
             System.out.println("===> 优化后");
 
