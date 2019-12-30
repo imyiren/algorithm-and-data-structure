@@ -15,7 +15,7 @@ public class Main {
             // 初始化数据
             long start;
             long end;
-            final int len = 10000000;
+            final int len = 100000;
             int[] bubbleArr = new int[len];
 
             for (int i = 0; i < len; i++) {
@@ -31,7 +31,7 @@ public class Main {
             int[] radixArr = Arrays.copyOf(bubbleArr, bubbleArr.length);
 
             System.out.println("===> 默认");
-            if (len < 100000) {
+            if (len <= 100000) {
                 start = System.currentTimeMillis();
                 BubbleSort.sort(bubbleArr);
                 end = System.currentTimeMillis();
@@ -71,7 +71,7 @@ public class Main {
 
             System.out.println("===> 优化后");
 
-            if (len < 100000) {
+            if (len <= 100000) {
                 start = System.currentTimeMillis();
                 BubbleSort.sort2(bubbleArr2);
                 end = System.currentTimeMillis();

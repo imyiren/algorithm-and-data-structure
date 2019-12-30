@@ -1,7 +1,10 @@
 package io.ilss.datastructure.search;
 
+import io.ilss.datastructure.sort.QuickSort;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 /**
  * @author feng
@@ -9,13 +12,16 @@ import java.util.List;
 public class InsertValueSearch {
 
     public static void main(String[] args) {
-        int[] arr = new int[]{1, 2, 2, 2, 3, 3, 3, 4, 5, 6, 7};
-        int result = search2(arr, 3);
-        System.out.println(result);
-        result = search(arr, 3);
-        System.out.println(result);
-        List<Integer> integers = search3(arr, 3);
-        System.out.println(integers);
+        int[] arr = new int[100000];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = (int) (Math.random() * 100000);
+        }
+        QuickSort.sort(arr);
+
+        int search = search(arr, arr[14335]);
+        System.out.println(search);
+        // List<Integer> integers = search3(arr, 3);
+        // System.out.println(integers);
 
     }
 
@@ -32,6 +38,8 @@ public class InsertValueSearch {
         while (left <= right) {
             // int mid = (left + right) / 2;
             int mid = left + (right - left) * (value - arr[left]) / (arr[right] - arr[left]);
+            System.out.println(mid);
+
             if (arr[mid] == value) {
                 return mid;
             }

@@ -1,7 +1,10 @@
 package io.ilss.datastructure.search;
 
+import io.ilss.datastructure.sort.QuickSort;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 /**
  * @author feng
@@ -9,10 +12,16 @@ import java.util.List;
 public class BinarySearch {
 
     public static void main(String[] args) {
-        int[] arr = new int[]{1, 2, 3, 3, 3, 4, 5, 6, 7};
-        // int search = search2(arr, 3);
-        List<Integer> integers = search3(arr, 3);
-        System.out.println(integers);
+        int[] arr = new int[100000];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = (int) (Math.random() * 100000);
+        }
+        QuickSort.sort2(arr);
+
+        int search = search(arr, arr[14335]);
+        System.out.println(search);
+        // List<Integer> integers = search3(arr, 3);
+        // System.out.println(integers);
 
     }
 
@@ -27,6 +36,7 @@ public class BinarySearch {
         int left = 0, right = arr.length;
         while (left <= right) {
             int mid = (left + right) / 2;
+            System.out.println(mid);
             if (arr[mid] == value) {
                 return mid;
             }
