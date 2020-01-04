@@ -39,3 +39,36 @@
 - 循环队列：io.ilss.datastructure.queue.CircleArrayQueue
     > 包括: 出队、入队等操作
 - leetcode循环队列实现题：io.ilss.datastructure.queue.MyCircularDeque
+
+
+# 5. Tree 树
+> 代码路径：[io.ilss.datastructure.tree (点击跳转)](https://github.com/ilssio/data-structure/tree/master/src/main/java/io/ilss/datastructure/tree "tree")
+
+- AAA：io.ilss.datastructure.tree.X
+    > 包括: XXX
+
+# 6. Sort 排序
+> 代码路径：[io.ilss.datastructure.sort (点击跳转)](https://github.com/ilssio/data-structure/tree/master/src/main/java/io/ilss/datastructure/sort "sort")
+
+- AAA：io.ilss.datastructure.sort.X
+    > 包括: XXX
+
+
+# 7. Graph 图
+> 代码路径：[io.ilss.datastructure.graph (点击跳转)](https://github.com/ilssio/data-structure/tree/master/src/main/java/io/ilss/datastructure/graph "graph")
+
+- AAA：io.ilss.datastructure.graph.X
+    > 包括: XXX
+
+
+# 8. Algorithm 算法
+> 代码路径：[io.ilss.datastructure.algorithm (点击跳转)](https://github.com/ilssio/data-structure/tree/master/src/main/java/io/ilss/datastructure/agorithm "agorithm")
+
+- AAA：io.ilss.datastructure.algorithm.X
+    > 包括: XXX
+
+# 9. leetcode 刷题
+
+
+
+
