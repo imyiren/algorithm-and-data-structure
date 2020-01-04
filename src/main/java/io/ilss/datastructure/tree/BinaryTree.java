@@ -145,6 +145,39 @@ public class BinaryTree {
         return null;
     }
 
+    // 叶子节点删除节点，如果是非叶子节点就删除子树
+    public boolean deleteNode(int value) {
+        if (null == this.root) {
+            System.out.println("空树！");
+        }
+        if (this.root.value == value) {
+            this.root = null;
+        }
+        return deleteNode(root, value);
+    }
+
+    private boolean deleteNode(BinaryTreeNode node, int value) {
+
+        if (null != node.left && node.left.value == value) {
+            node.left = null;
+            return true;
+        }
+        if (null != node.right && node.right.value == value) {
+            node.right = null;
+            return true;
+        }
+
+        if (null != node.left && deleteNode(node.left, value)) {
+            return true;
+        }
+
+        if (null != node.right && deleteNode(node.right, value)) {
+            return true;
+        }
+
+        return false;
+    }
+
 
     public static void main(String[] args) {
         BinaryTreeNode node1 = new BinaryTreeNode(1);
@@ -177,6 +210,14 @@ public class BinaryTree {
         System.out.println("===> 后序查找");
         BinaryTreeNode postSearchResult = binaryTree.postSearch(6);
         System.out.println(postSearchResult);
+
+
+        System.out.println("===> 删除");
+        binaryTree.deleteNode(4);
+        binaryTree.preOrder();
+        System.out.println("--------");
+        binaryTree.deleteNode(3);
+        binaryTree.preOrder();
 
     }
 }
