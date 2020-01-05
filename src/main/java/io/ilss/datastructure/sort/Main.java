@@ -13,7 +13,7 @@ public class Main {
             // 初始化数据
             long start;
             long end;
-            final int len = 100000;
+            final int len = 1000000;
             int[] bubbleArr = new int[len];
 
             for (int i = 0; i < len; i++) {
@@ -27,6 +27,7 @@ public class Main {
             int[] quickArr = Arrays.copyOf(bubbleArr, bubbleArr.length);
             int[] mergeArr = Arrays.copyOf(bubbleArr, bubbleArr.length);
             int[] radixArr = Arrays.copyOf(bubbleArr, bubbleArr.length);
+            int[] heapArr = Arrays.copyOf(bubbleArr, bubbleArr.length);
 
             System.out.println("===> 默认");
             if (len <= 100000) {
@@ -66,6 +67,11 @@ public class Main {
             RadixSort.sort(radixArr);
             end = System.currentTimeMillis();
             System.out.println("基数: " + (end - start) / 1000.0);
+
+            start = System.currentTimeMillis();
+            HeapSort.sort(heapArr);
+            end = System.currentTimeMillis();
+            System.out.println("堆排序: " + (end - start) / 1000.0);
 
             System.out.println("===> 优化后");
 
