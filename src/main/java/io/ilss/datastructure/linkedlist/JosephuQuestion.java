@@ -58,7 +58,7 @@ public class JosephuQuestion {
                 break;
             }
             // 指正移动
-            for (int i = 0; i < m-1; i++) {
+            for (int i = 0; i < m - 1; i++) {
                 temp = temp.next;
             }
             // 加到结果集

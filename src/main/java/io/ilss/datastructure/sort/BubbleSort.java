@@ -5,6 +5,7 @@ import java.util.Arrays;
 /**
  * 冒泡排序
  * 时间复杂度：o(n^2) 空间复杂度o(1)
+ *
  * @author feng
  */
 public class BubbleSort {
@@ -25,6 +26,7 @@ public class BubbleSort {
 
     /**
      * 优化 增加交换标志量 减少不必要的循环
+     *
      * @param arr
      */
     public static void sort2(int[] arr) {

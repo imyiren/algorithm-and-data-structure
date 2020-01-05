@@ -19,9 +19,9 @@ public class ShellSort {
             for (int i = step; i < arr.length; i++) {
                 // 分组做交换
                 for (int idx = i - step; idx >= 0 && arr[idx] > arr[idx + step]; idx = idx - step) {
-                        temp = arr[idx];
-                        arr[idx] = arr[idx + step];
-                        arr[idx + step] = temp;
+                    temp = arr[idx];
+                    arr[idx] = arr[idx + step];
+                    arr[idx + step] = temp;
                 }
             }
         }
@@ -30,6 +30,7 @@ public class ShellSort {
     /**
      * 移动法
      * 记这个
+     *
      * @param arr 数组
      */
     public static void sort2(int[] arr) {
@@ -39,7 +40,7 @@ public class ShellSort {
             for (int i = step; i < arr.length; i++) {
                 int idx = i;
                 int insertValue = arr[i];
-                for (int j = i-step; j >= 0 && arr[j] > insertValue; j -= step) {
+                for (int j = i - step; j >= 0 && arr[j] > insertValue; j -= step) {
                     arr[j + step] = arr[j];
                     idx = j;
                 }
@@ -50,7 +51,6 @@ public class ShellSort {
     }
 
     /**
-     *
      * @param arr
      */
     public static void sort3(int[] arr) {

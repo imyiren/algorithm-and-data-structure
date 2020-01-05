@@ -34,7 +34,7 @@ public class FibonacciSearch {
                 key--;
             } else if (value > tempArr[mid]) {
                 low = mid + 1;
-                key-=2;
+                key -= 2;
             } else {
                 if (mid <= high) {
                     return mid;

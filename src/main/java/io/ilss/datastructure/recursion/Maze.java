@@ -35,9 +35,10 @@ public class Maze {
      * 到6 5 说明通路找到
      * 约定：map[i][j] == 0 说明没有走过  1为墙 2为通路可以走 3表示走过但是走不通。
      * 寻找策略 下右上左 如果不同再回溯
+     *
      * @param map 地图
-     * @param i 开始行位置
-     * @param j 开始列位置
+     * @param i   开始行位置
+     * @param j   开始列位置
      * @return 通路true 否则false
      */
     public static boolean setWay(int[][] map, int i, int j) {

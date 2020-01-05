@@ -13,7 +13,7 @@ public class Main {
         final int len = 2000;
         int[] arr = new int[len];
         for (int i = 0; i < len; i++) {
-            arr[i] = (int) (Math.random() * len/100);
+            arr[i] = (int) (Math.random() * len / 100);
         }
         QuickSort.sort(arr);
         System.out.println(Arrays.toString(arr));

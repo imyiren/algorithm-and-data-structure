@@ -29,6 +29,7 @@ public class ArrayBinaryTree {
             preOrder(next);
         }
     }
+
     private void infixOrder() {
         infixOrder(0);
     }
@@ -47,6 +48,7 @@ public class ArrayBinaryTree {
             infixOrder(next);
         }
     }
+
     private void postOrder() {
         postOrder(0);
     }

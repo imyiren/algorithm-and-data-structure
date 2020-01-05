@@ -73,7 +73,7 @@ public class SingleLinkedList {
                 break;
             }
             if (temp.next.value == no) {
-                temp.next  = temp.next.next;
+                temp.next = temp.next.next;
                 break;
             }
             temp = temp.next;
@@ -106,12 +106,12 @@ public class SingleLinkedList {
             if (null == cur) {
                 break;
             }
-            head.next  = head.next.next;
+            head.next = head.next.next;
             // 把当前节点挪到reverseHead上
-            cur.next  = reverseHead.next;
+            cur.next = reverseHead.next;
             reverseHead.next = cur;
         }
-        head.next  = reverseHead.next;
+        head.next = reverseHead.next;
     }
 
     public SingleNode findLastIndexNode(SingleNode head, int index) {
@@ -180,7 +180,7 @@ public class SingleLinkedList {
         System.out.println("逆序打印");
         linkedList.reversePrint(linkedList.head);
 
-        System.out.println("寻找倒数的节点： "+linkedList.findLastIndexNode(linkedList.head, 2));
+        System.out.println("寻找倒数的节点： " + linkedList.findLastIndexNode(linkedList.head, 2));
 
         linkedList.list();
 

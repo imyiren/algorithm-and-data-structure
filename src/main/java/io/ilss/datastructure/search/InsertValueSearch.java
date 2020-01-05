@@ -4,7 +4,6 @@ import io.ilss.datastructure.sort.QuickSort;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 /**
  * @author feng
@@ -33,7 +32,7 @@ public class InsertValueSearch {
      * @return
      */
     public static int search(int[] arr, int value) {
-        int left = 0, right = arr.length-1;
+        int left = 0, right = arr.length - 1;
         int i = 0;
         while (left <= right) {
             // int mid = (left + right) / 2;

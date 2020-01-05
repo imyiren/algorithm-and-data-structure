@@ -12,6 +12,7 @@ public class EightQueens {
     private int[] arr = new int[max];
     @Getter
     private int count = 0;
+
     public static void main(String[] args) {
         EightQueens eightQueens = new EightQueens();
         eightQueens.check(0);

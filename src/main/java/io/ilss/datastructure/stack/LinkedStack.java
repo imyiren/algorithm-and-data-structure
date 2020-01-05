@@ -18,6 +18,7 @@ public class LinkedStack implements Stack {
         node.next = this.top.next;
         this.top.next = node;
     }
+
     @Override
     public int pop() {
         if (isEmpty()) {

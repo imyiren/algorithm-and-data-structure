@@ -99,7 +99,6 @@ public class DoubleLinkedList {
     }
 
 
-
     public static void main(String[] args) {
         DoubleLinkedList linkedList = new DoubleLinkedList();
         DoubleNode nodeOne = new DoubleNode(1);

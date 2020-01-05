@@ -82,7 +82,7 @@ public class SuffixCalculator {
         return result.toArray(new String[0]);
     }
 
-    public static void suffixCalculator(String[] strArr ) {
+    public static void suffixCalculator(String[] strArr) {
         Stack stack = new LinkedStack();
 
         for (String item : strArr) {
