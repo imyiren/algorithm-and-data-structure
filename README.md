@@ -44,15 +44,28 @@
 # 5. Tree 树
 > 代码路径：[io.ilss.datastructure.tree (点击跳转)](https://github.com/ilssio/data-structure/tree/master/src/main/java/io/ilss/datastructure/tree "tree")
 
-- AAA：io.ilss.datastructure.tree.X
-    > 包括: XXX
+- 二叉树链式实现：io.ilss.datastructure.tree.BinaryTree
+    > 包括: 各种遍历和查找实现
+- 二叉树数组实现：io.ilss.datastructure.tree.ArrayBinaryTree
+    > 包括: 各种遍历和查找实现
+- 二叉线索树实现：io.ilss.datastructure.tree.ThreadedBinaryTree
+    > 包括: 构建二叉线索树、二叉线索树的遍历等
+- 哈夫曼树实现：io.ilss.datastructure.tree.HuffmanTree
+    > 包括: 构建huffman树
+- 哈夫曼编码实现：io.ilss.datastructure.tree.HuffmanCode
+    > 包括: 构建huffman编码
 
 # 6. Sort 排序
 > 代码路径：[io.ilss.datastructure.sort (点击跳转)](https://github.com/ilssio/data-structure/tree/master/src/main/java/io/ilss/datastructure/sort "sort")
 
-- AAA：io.ilss.datastructure.sort.X
-    > 包括: XXX
-
+- 冒泡排序：io.ilss.datastructure.sort.BubbleSort
+- 插入排序：io.ilss.datastructure.sort.InsertSort
+- 选择排序：io.ilss.datastructure.sort.SelectSort
+- 归并排序：io.ilss.datastructure.sort.MergeSort
+- 希尔排序：io.ilss.datastructure.sort.ShellSort
+- 桶排序：io.ilss.datastructure.sort.RadixSort
+- 快速排序：io.ilss.datastructure.sort.QuickSort
+- 堆排序：io.ilss.datastructure.sort.HeapSort
 
 # 7. Graph 图
 > 代码路径：[io.ilss.datastructure.graph (点击跳转)](https://github.com/ilssio/data-structure/tree/master/src/main/java/io/ilss/datastructure/graph "graph")
@@ -68,7 +81,21 @@
     > 包括: XXX
 
 # 9. leetcode 刷题
+> 代码路径：[io.ilss.datastructure.leetcode (点击跳转)](https://github.com/ilssio/data-structure/tree/master/src/main/java/io/ilss/datastructure/leetcode "leetcode")
 
+- 数组类：io.ilss.datastructure.leetcode.array.*
+    > 包括: Q16、Q18、Q26、Q27、Q33
+- 链表类：io.ilss.datastructure.leetcode.linked.*
+    > 包括: 
+- 树类：io.ilss.datastructure.leetcode.tree.*
+    > 包括: 
+- 图类：io.ilss.datastructure.leetcode.graph.*
+    > 包括:
+- 动态规划：io.ilss.datastructure.leetcode.dynamic.*
+    > 包括: 
 
+# 10. 剑指offer
+> 代码路径：[io.ilss.datastructure.swordoffer (点击跳转)](https://github.com/ilssio/data-structure/tree/master/src/main/java/io/ilss/datastructure/swordoffer "swordoffer")
 
-
+- 待添加：io.ilss.datastructure.swordoffer.XXX
+    > 包括: 
