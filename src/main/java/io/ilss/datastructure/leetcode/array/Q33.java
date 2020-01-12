@@ -19,6 +19,7 @@ package io.ilss.datastructure.leetcode.array;
 public class Q33 {
     public int search(int[] nums, int target) {
 
+        return -1;
     }
 
     public static void main(String[] args) {
