@@ -155,18 +155,6 @@ public class HuffmanCode {
         System.out.println(Arrays.toString(result));
         String resultString = unzipByHuffman(result, huffmanCodes);
         System.out.println(resultString);
-
-        // byte[] contentBytes = content.getBytes();
-        // List<HuffmanCodeNode> nodes = getNodes(contentBytes);
-        // HuffmanCodeNode root = createHuffmanTree(nodes);
-        // preOrder(root);
-        // System.out.println("==================>");
-        // Map<Byte, String> huffmanCodes = getHuffmanCodes(root);
-        // byte[] bytes = zipByHuffmanCode(content.getBytes(), huffmanCodes);
-        // System.out.println(huffmanCodes);
-        // System.out.println(Arrays.toString(bytes));
-        // System.out.println(bytes.length);
-
     }
 
 }
