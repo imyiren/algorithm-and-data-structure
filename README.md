@@ -54,6 +54,8 @@
     > 包括: 构建huffman树
 - 哈夫曼编码实现：io.ilss.datastructure.tree.HuffmanCode
     > 包括: 构建huffman编码
+- 二叉搜索树实现：io.ilss.datastructure.tree.BinarySortTree
+    > 包括: 添加元素，删除元素等
 
 # 6. Sort 排序
 > 代码路径：[io.ilss.datastructure.sort (点击跳转)](https://github.com/ilssio/data-structure/tree/master/src/main/java/io/ilss/datastructure/sort "sort")
