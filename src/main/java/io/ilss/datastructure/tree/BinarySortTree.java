@@ -98,7 +98,6 @@ public class BinarySortTree {
         // 右子节点 parent.right = null
 
         // 如果要删除的是子节点。
-        assert null != parent;
         if (null == node.left && null == node.right) {
             System.out.println("===> 删除节点是子节点");
             // 这个地方要判空 因为你不确定是左边还是右边，也可以比较value的值 比如左边：node.value < parent.value
@@ -129,6 +128,11 @@ public class BinarySortTree {
         // 有左没有右
         if (null != node.left && null == node.right) {
             System.out.println("===> 删除节点有左子树");
+            if (null == parent) {
+                root = node.left;
+                return;
+            }
+
             // 删除的节点在父节点的左边
             if (null != parent.left && parent.left.value == node.value) {
                 parent.left = node.left;
@@ -141,6 +145,10 @@ public class BinarySortTree {
         // 有右没有左
         if (null != node.right && null == node.left) {
             System.out.println("===> 删除节点有右子树");
+            if (null == parent) {
+                root = node.right;
+                return;
+            }
             // 删除的节点在父节点的左边
             if (null != parent.left && parent.left.value == node.value) {
                 parent.left = node.right;
@@ -161,6 +169,7 @@ public class BinarySortTree {
         // 最后处理左右都有子树的情况
         // 找到删除节点的右子树种最小的值
         System.out.println("===> 删除节点有左右子树");
+        // 当前代码是从右子树找到最小的替代， 也可以使用左子树最大的去替代。
         BinarySortTreeNode tempParent = node;
         tempNode = node.right;
         while (null != tempNode.left) {
@@ -213,6 +222,7 @@ public class BinarySortTree {
         System.out.println("=====> 构建只有根节点的树");
         sortTree = new BinarySortTree();
         sortTree.add(new BinarySortTreeNode(5));
+        sortTree.add(new BinarySortTreeNode(1));
         System.out.println("============> remove 5");
         sortTree.remove(5);
         sortTree.infixOrder();
