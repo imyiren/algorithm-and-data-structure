@@ -1,7 +1,7 @@
 package com.imyiren.datastructure.tree;
 
 /**
- * @author feng
+ * @author yiren
  */
 public class HuffmanTreeNode implements Comparable<HuffmanTreeNode> {
     public int value;

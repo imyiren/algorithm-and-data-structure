@@ -3,7 +3,7 @@ package com.imyiren.datastructure.stack;
 /**
  * 数组实现栈
  *
- * @author feng
+ * @author yiren
  */
 public class ArrayStack implements Stack {
     private int top;

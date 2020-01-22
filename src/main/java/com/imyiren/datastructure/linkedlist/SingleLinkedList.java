@@ -3,7 +3,7 @@ package com.imyiren.datastructure.linkedlist;
 import java.util.Stack;
 
 /**
- * @author feng
+ * @author yiren
  */
 public class SingleLinkedList {
     // 头结点不动 不存放具体数据

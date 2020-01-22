@@ -1,7 +1,7 @@
 package com.imyiren.datastructure.stack;
 
 /**
- * @author feng
+ * @author yiren
  */
 public class CalculatorUtils {
 

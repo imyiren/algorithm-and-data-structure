@@ -1,7 +1,7 @@
 package com.imyiren.datastructure.tree;
 
 /**
- * @author feng
+ * @author yiren
  */
 public class BinaryTree {
     private BinaryTreeNode root;

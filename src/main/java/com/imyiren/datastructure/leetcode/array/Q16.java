@@ -10,7 +10,7 @@ package com.imyiren.datastructure.leetcode.array;
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/3sum-closest
  *
- * @author feng
+ * @author yiren
  */
 public class Q16 {
 

@@ -17,7 +17,7 @@ package com.imyiren.datastructure.leetcode.array;
  * 链接：https://leetcode-cn.com/problems/remove-element
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  *
- * @author feng
+ * @author yiren
  */
 public class Q27 {
     public int removeElement(int[] nums, int val) {

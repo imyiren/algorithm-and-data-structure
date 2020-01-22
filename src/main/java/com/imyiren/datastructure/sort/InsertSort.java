@@ -3,7 +3,7 @@ package com.imyiren.datastructure.sort;
 import java.util.Arrays;
 
 /**
- * @author feng
+ * @author yiren
  */
 public class InsertSort {
     public static void sort(int[] arr) {

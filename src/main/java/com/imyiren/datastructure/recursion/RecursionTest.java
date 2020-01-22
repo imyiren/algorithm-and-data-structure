@@ -1,7 +1,7 @@
 package com.imyiren.datastructure.recursion;
 
 /**
- * @author feng
+ * @author yiren
  */
 public class RecursionTest {
     private static void test(int n) {

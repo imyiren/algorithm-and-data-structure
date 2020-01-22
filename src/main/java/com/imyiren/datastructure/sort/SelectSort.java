@@ -6,7 +6,7 @@ import java.util.Arrays;
  * 选择排序
  * 时间复杂度：o(n^2)
  *
- * @author feng
+ * @author yiren
  */
 public class SelectSort {
     public static void sort(int[] arr) {

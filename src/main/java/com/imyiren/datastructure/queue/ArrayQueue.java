@@ -3,7 +3,7 @@ package com.imyiren.datastructure.queue;
 import java.util.Scanner;
 
 /**
- * @author feng
+ * @author yiren
  */
 public class ArrayQueue {
     private int maxSize;

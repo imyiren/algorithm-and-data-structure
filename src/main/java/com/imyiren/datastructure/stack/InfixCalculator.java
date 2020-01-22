@@ -5,7 +5,7 @@ import java.util.Scanner;
 import static com.imyiren.datastructure.stack.CalculatorUtils.*;
 
 /**
- * @author feng
+ * @author yiren
  */
 public class InfixCalculator {
     public static void main(String[] args) {

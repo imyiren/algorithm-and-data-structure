@@ -3,7 +3,7 @@ package com.imyiren.datastructure.tree;
 import java.util.*;
 
 /**
- * @author feng
+ * @author yiren
  */
 public class HuffmanCode {
 

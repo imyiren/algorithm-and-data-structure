@@ -1,7 +1,7 @@
 package com.imyiren.datastructure.tree;
 
 /**
- * @author feng
+ * @author yiren
  */
 public class HuffmanCodeNode implements Comparable<HuffmanCodeNode> {
     public Byte data;

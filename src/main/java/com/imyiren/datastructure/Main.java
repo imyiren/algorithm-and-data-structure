@@ -1,7 +1,7 @@
 package com.imyiren.datastructure;
 
 /**
- * @author feng
+ * @author yiren
  */
 public class Main {
     public static void main(String[] args) {

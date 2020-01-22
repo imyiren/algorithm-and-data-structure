@@ -3,7 +3,7 @@ package com.imyiren.datastructure.stack;
 import com.imyiren.datastructure.linkedlist.SingleNode;
 
 /**
- * @author feng
+ * @author yiren
  */
 public class LinkedStack implements Stack {
     public SingleNode top;

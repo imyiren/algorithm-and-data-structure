@@ -19,7 +19,7 @@ import java.util.List;
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/4sum
  *
- * @author feng
+ * @author yiren
  */
 public class Q18 {
     public List<List<Integer>> fourSum(int[] nums, int target) {

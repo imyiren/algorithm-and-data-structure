@@ -3,7 +3,7 @@ package com.imyiren.datastructure.search;
 import java.util.Arrays;
 
 /**
- * @author feng
+ * @author yiren
  */
 public class FibonacciSearch {
     public static int MAX_SIZE = 20;

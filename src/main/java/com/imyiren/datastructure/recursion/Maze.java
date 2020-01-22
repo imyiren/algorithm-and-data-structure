@@ -1,7 +1,7 @@
 package com.imyiren.datastructure.recursion;
 
 /**
- * @author feng
+ * @author yiren
  */
 public class Maze {
     public static void main(String[] args) {

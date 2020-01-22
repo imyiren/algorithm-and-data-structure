@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * 稀疏数组
  *
- * @author feng
+ * @author yiren
  */
 public class SparseArray {
 

@@ -1,7 +1,7 @@
 package com.imyiren.datastructure.search;
 
 /**
- * @author feng
+ * @author yiren
  */
 public class SeqSearch {
     public static void main(String[] args) {

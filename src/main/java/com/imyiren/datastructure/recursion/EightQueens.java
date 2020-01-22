@@ -4,7 +4,7 @@ import lombok.Getter;
 import lombok.ToString;
 
 /**
- * @author feng
+ * @author yiren
  */
 @ToString
 public class EightQueens {

@@ -6,7 +6,7 @@ import java.util.Arrays;
  * 冒泡排序
  * 时间复杂度：o(n^2) 空间复杂度o(1)
  *
- * @author feng
+ * @author yiren
  */
 public class BubbleSort {
     public static void sort(int[] arr) {

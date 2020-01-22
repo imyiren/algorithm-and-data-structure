@@ -6,7 +6,7 @@ import java.util.List;
 import static com.imyiren.datastructure.stack.CalculatorUtils.*;
 
 /**
- * @author feng
+ * @author yiren
  */
 public class SuffixCalculator {
     public static void main(String[] args) {

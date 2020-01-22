@@ -3,7 +3,7 @@ package com.imyiren.datastructure.leetcode.array;
 import java.util.Arrays;
 
 /**
- * @author feng
+ * @author yiren
  */
 public class Q26 {
     public int removeDuplicates(int[] nums) {

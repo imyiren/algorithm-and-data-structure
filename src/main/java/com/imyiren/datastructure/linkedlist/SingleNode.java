@@ -1,7 +1,7 @@
 package com.imyiren.datastructure.linkedlist;
 
 /**
- * @author feng
+ * @author yiren
  */
 public class SingleNode {
     public int value;
