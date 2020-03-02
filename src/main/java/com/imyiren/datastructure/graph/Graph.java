@@ -1,8 +1,6 @@
 package com.imyiren.datastructure.graph;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 /**
  * 邻接矩阵实现无向图结构
@@ -148,6 +146,68 @@ public class Graph {
         }
     }
 
+
+    private void bfs(int currentNode) {
+        // 访问节点队列
+        Queue<Integer> queue = new LinkedList<>();
+        // 表示队列头结点对应的下标
+        int queueHeader;
+        // 队列头结点的邻接节点
+        int headerNext = -1;
+
+
+        // 访问这个节点
+        System.out.print(vertexList.get(currentNode));
+        // 标记为已访问
+        isVisited[currentNode] = true;
+        // 将节点加入队列
+        queue.add(currentNode);
+
+
+        while (!queue.isEmpty()) {
+            // 取出队列头节点的下标
+            queueHeader = queue.poll();
+
+            // 得到邻节点的下标
+            for (int j = 0; j < vertexList.size(); j++) {
+                if (edges[currentNode][j] > 0) {
+                    headerNext = j;
+                    break;
+                }
+            }
+            // 如果有领节点
+            while (headerNext != -1) {
+                if (!isVisited[headerNext]) {
+                    System.out.print(vertexList.get(headerNext));
+                    isVisited[headerNext] = true;
+                    queue.add(headerNext);
+                }
+                // 以u为前驱节点找w下一个邻节点
+                boolean flag = true;
+                for (int j = headerNext + 1; j < vertexList.size(); j++) {
+                    if (edges[queueHeader][j] > 0 && !isVisited[j]) {
+                        headerNext = j;
+                        flag = false;
+                        break;
+                    }
+                }
+                if (flag) {
+                    headerNext = -1;
+                }
+            }
+        }
+    }
+
+    public void bfs() {
+        for (int i = 0; i < vertexList.size(); i++) {
+            if (!isVisited[i]) {
+                bfs(i);
+            }
+        }
+    }
+
+
+
     public static void main(String[] args) {
         int n = 5;
         String[] vertexes = {"A", "B", "C", "D", "E"};
@@ -163,6 +223,6 @@ public class Graph {
 
         graph.showGraph();
 
-        graph.dfs();
+        graph.bfs();
     }
 }
