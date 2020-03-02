@@ -72,15 +72,18 @@
 # 7. Graph 图
 > 代码路径：[io.ilss.datastructure.graph (点击跳转)](https://github.com/ilssio/data-structure/tree/master/src/main/java/io/ilss/datastructure/graph "graph")
 
-- AAA：io.ilss.datastructure.graph.X
-    > 包括: XXX
+- AAA：io.ilss.datastructure.graph.Graph
+    > 包括: 图的定义、DFS、BFS算法
 
 
 # 8. Algorithm 算法
 > 代码路径：[io.ilss.datastructure.algorithm (点击跳转)](https://github.com/ilssio/data-structure/tree/master/src/main/java/io/ilss/datastructure/agorithm "agorithm")
 
-- AAA：io.ilss.datastructure.algorithm.X
-    > 包括: XXX
+- 汉诺塔问题：com.imyiren.algorithm.divideandconquer.HanoiTower
+- 动态规划-01背包：com.imyiren.algorithm.dynamic.Package
+- kmp算法-字符串匹配：com.imyiren.algorithm.kmp.MatchString
+    > 包括: 暴力法解决、KMP算法解决
+
 
 # 9. leetcode 刷题
 > 代码路径：[io.ilss.datastructure.leetcode (点击跳转)](https://github.com/ilssio/data-structure/tree/master/src/main/java/io/ilss/datastructure/leetcode "leetcode")

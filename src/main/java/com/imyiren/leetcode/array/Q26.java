@@ -1,4 +1,4 @@
-package com.imyiren.datastructure.leetcode.array;
+package com.imyiren.leetcode.array;
 
 import java.util.Arrays;
 
