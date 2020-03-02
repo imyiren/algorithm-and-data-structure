@@ -206,8 +206,6 @@ public class Graph {
         }
     }
 
-
-
     public static void main(String[] args) {
         int n = 5;
         String[] vertexes = {"A", "B", "C", "D", "E"};
