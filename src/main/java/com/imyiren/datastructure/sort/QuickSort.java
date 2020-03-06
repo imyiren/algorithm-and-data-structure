@@ -57,18 +57,24 @@ public class QuickSort {
         sort2(arr, 0, arr.length - 1);
     }
 
+    /**
+     * 这个方法好
+     * @param arr
+     * @param left
+     * @param right
+     */
     private static void sort2(int[] arr, int left, int right) {
         int pivot = arr[left];
         int i = left;
         int j = right;
         while (i < j) {
-            while ((i < j) && (arr[j] > pivot)) {
+            while (i < j && arr[j] > pivot) {
                 j--;
             }
-            while ((i < j) && (arr[i] < pivot)) {
+            while (i < j && arr[i] < pivot) {
                 i++;
             }
-            if ((arr[i] == arr[j]) && (i < j)) {
+            if (i < j && arr[i] == arr[j]) {
                 i++;
             } else {
                 int temp = arr[i];
@@ -85,10 +91,9 @@ public class QuickSort {
 
     }
 
-
     public static void main(String[] args) {
         int[] arr = new int[]{11, 3, 4, 1, 2, 3, 5, 33, 22};
-        sort2(arr);
+        sort(arr);
         System.out.println(Arrays.toString(arr));
     }
 }
