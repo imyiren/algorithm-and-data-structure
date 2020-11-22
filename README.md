@@ -4,7 +4,7 @@
 # 0. 目录
 
 |  内容   | 地址  |
-|  :---:  |  :---:  |
+|  ---  |  :---:  |
 | 1. LinkedList 链表  | [com.imyiren.datastructure.linkedlist (点击跳转)](https://github.com/imyiren/data-structure/tree/master/src/main/java/com/imyiren/datastructure/linkedlist "linkedlist") |
 | 2. SparseArray 稀疏数组  | [com.imyiren.datastructure.sparsearray (点击跳转)](https://github.com/imyiren/data-structure/tree/master/src/main/java/com/imyiren/datastructure/sparsearray "sparsearray") |
 | 3. Stack 栈  | [com.imyiren.datastructure.stack (点击跳转)](https://github.com/imyiren/data-structure/tree/master/src/main/java/com/imyiren/datastructure/stack "stack") |
