@@ -3,16 +3,16 @@
 
 # 0. 目录
     
-    1. LinkedList 链表    [com.imyiren.datastructure.linkedlist (点击跳转)](https://github.com/imyiren/data-structure/tree/master/src/main/java/com/imyiren/datastructure/linkedlist "linkedlist")
-    2. SparseArray 稀疏数组 [com.imyiren.datastructure.sparsearray (点击跳转)](https://github.com/imyiren/data-structure/tree/master/src/main/java/com/imyiren/datastructure/sparsearray "sparsearray")
-    3. Stack 栈 [com.imyiren.datastructure.stack (点击跳转)](https://github.com/imyiren/data-structure/tree/master/src/main/java/com/imyiren/datastructure/stack "stack")
-    4. Queue 队列 [com.imyiren.datastructure.queue (点击跳转)](https://github.com/imyiren/data-structure/tree/master/src/main/java/com/imyiren/datastructure/queue "queue")
-    5. Tree 树 [com.imyiren.datastructure.tree (点击跳转)](https://github.com/imyiren/data-structure/tree/master/src/main/java/com/imyiren/datastructure/tree "tree")
-    6. Sort 排序 [com.imyiren.datastructure.sort (点击跳转)](https://github.com/imyiren/data-structure/tree/master/src/main/java/com/imyiren/datastructure/sort "sort")
-    7. Graph 图 [com.imyiren.datastructure.graph (点击跳转)](https://github.com/imyiren/data-structure/tree/master/src/main/java/com/imyiren/datastructure/graph "graph")
-    8. Algorithm 算法 [com.imyiren.datastructure.algorithm (点击跳转)](https://github.com/imyiren/data-structure/tree/master/src/main/java/com/imyiren/datastructure/agorithm "agorithm")
-    9. leetcode 刷题 [com.imyiren.datastructure.leetcode (点击跳转)](https://github.com/imyiren/data-structure/tree/master/src/main/java/com/imyiren/datastructure/leetcode "leetcode")
-    10. 剑指offer [com.imyiren.datastructure.swordoffer (点击跳转)](https://github.com/imyiren/data-structure/tree/master/src/main/java/com/imyiren/datastructure/swordoffer "swordoffer")
+1. LinkedList 链表    [com.imyiren.datastructure.linkedlist (点击跳转)](https://github.com/imyiren/data-structure/tree/master/src/main/java/com/imyiren/datastructure/linkedlist "linkedlist")
+2. SparseArray 稀疏数组 [com.imyiren.datastructure.sparsearray (点击跳转)](https://github.com/imyiren/data-structure/tree/master/src/main/java/com/imyiren/datastructure/sparsearray "sparsearray")
+3. Stack 栈 [com.imyiren.datastructure.stack (点击跳转)](https://github.com/imyiren/data-structure/tree/master/src/main/java/com/imyiren/datastructure/stack "stack")
+4. Queue 队列 [com.imyiren.datastructure.queue (点击跳转)](https://github.com/imyiren/data-structure/tree/master/src/main/java/com/imyiren/datastructure/queue "queue")
+5. Tree 树 [com.imyiren.datastructure.tree (点击跳转)](https://github.com/imyiren/data-structure/tree/master/src/main/java/com/imyiren/datastructure/tree "tree")
+6. Sort 排序 [com.imyiren.datastructure.sort (点击跳转)](https://github.com/imyiren/data-structure/tree/master/src/main/java/com/imyiren/datastructure/sort "sort")
+7. Graph 图 [com.imyiren.datastructure.graph (点击跳转)](https://github.com/imyiren/data-structure/tree/master/src/main/java/com/imyiren/datastructure/graph "graph")
+8. Algorithm 算法 [com.imyiren.datastructure.algorithm (点击跳转)](https://github.com/imyiren/data-structure/tree/master/src/main/java/com/imyiren/datastructure/agorithm "agorithm")
+9. leetcode 刷题 [com.imyiren.datastructure.leetcode (点击跳转)](https://github.com/imyiren/data-structure/tree/master/src/main/java/com/imyiren/datastructure/leetcode "leetcode")
+10. 剑指offer [com.imyiren.datastructure.swordoffer (点击跳转)](https://github.com/imyiren/data-structure/tree/master/src/main/java/com/imyiren/datastructure/swordoffer "swordoffer")
 
 # 1. LinkedList 链表
 > 代码路径：[com.imyiren.datastructure.linkedlist (点击跳转)](https://github.com/imyiren/data-structure/tree/master/src/main/java/com/imyiren/datastructure/linkedlist "linkedlist")
